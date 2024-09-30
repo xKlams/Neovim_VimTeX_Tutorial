@@ -1,12 +1,12 @@
 # TeX_Notes_Setup
-A brief tutorial to setup Neovim Vimtex and other useful plugins to take notes faster.
+A brief tutorial to set up Neovim, Vimtex, and other useful plugins for faster note-taking.
 
 # Warning
-All these steps are performed in Fedora Workstation 39.
+All these steps were performed in Fedora Workstation 39.
 I have mainly taken inspiration from [this](https://castel.dev/post/lecture-notes-1/) blog that i read a while back.
 
 # Tutorial Start
-First thing first we will need to install neovim.
+First we'll install Neovim
 fedora:
 
       sudo dnf update && sudo dnf install neovim
@@ -15,11 +15,11 @@ arch:
 
       sudo pacman -Sy install neovim
 
-Also install neovim python module:
+Also install Neovim Python module:
 
     pip3 install --user neovim
 
-Create the directory to store all the nvim plugins:
+Next, create a directory to store your Neovim plugins:
 
       mkdir ~/.config/nvim
 
@@ -49,9 +49,9 @@ Add the following lines:
       let g:vimtex_view_method='zathura'
       let g:vimtex_quickfix_mode=0
 
-This will add all the necessary plugin and spelling correction (change "it" with your preferred language).
+This will add all the necessary plugins and enable spell-checking (change "it" to your preferred language).
 
-Open neovim
+Open Neovim
 
       nvim
 
@@ -74,7 +74,7 @@ Now we need to create a directory to store all our .snippets file for the UltiSn
 Now we are all setup!
 
 # What to do now?
-Now we are free to add all of our favourite snippets to our tex.snippets file, to do so we just have to use the following commadn inside nvim
+Now you can add your favorite snippets to the tex.snippets file. Simply use this command in Neovim:
 
       :UltiSnipsEdit
 
@@ -199,13 +199,13 @@ endsnippet
 
 # Create a new .tex file
 
-If you have noticed the "newfile" snippet, that is used to initialize a new .tex file, it creates the document class and the main features of the file. In that is included this line.
+The "newfile" snippet initializes a new .tex file by creating the document class and setting up the main features. It includes the following line:
 
-	intput{./setup.tex}
+	input{./setup.tex}
 
-The content of this file is just a bunch of includes of different packages and many custom enviroments. Feel free to change it as you like.
+The content of this file is just a bunch of includes of different packages and many custom environments. Feel free to change it as you like.
 
-# Install package (fedora)
+# Install LaTeX package (fedora)
 
 To install a package just use:
 
@@ -219,4 +219,8 @@ To install all the packages in the setup.tex file you can run:
  Also install the core LaTeX system:
  
  	sudo dnf install texlive-scheme-basic
+
+  # Have fun!
+
+  Consider starring this repository if it has been useful!
 
