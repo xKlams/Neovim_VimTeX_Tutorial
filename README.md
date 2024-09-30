@@ -88,9 +88,9 @@ snippet newfile "New file"
 
 \title{$1}
 \date{`date +%F`}
-\author{Federico De Sisti}
+\author{xKlams}
 
-\input{../../setup.tex}
+\input{./setup.tex}
 
 \begin{document}
 	\maketitle
@@ -197,6 +197,21 @@ endsnippet
 
 ```
 
-# setup.tex file
+# Create a new .tex file
 
-If you have noticed the "newfile" snippets 
+If you have noticed the "newfile" snippet, that is used to initialize a new .tex file, it creates the document class and the main features of the file. In that is included this line.
+
+	intput{./setup.tex}
+
+The content of this file is just a bunch of includes of different packages and many custom enviroments. Feel free to change it as you like.
+
+# Install package (fedora)
+
+To install a package just use
+
+	sudo dnf install 'tex(example.cls)' 
+	sudo dnf install 'tex(example.sty)'
+
+To install all the packages in the setup.tex file you can run
+
+	sudo dnf install 'tex(amsmath.sty)' 'tex(amsthm.sty)' 'tex(mdframed.sty)' 'tex(amssymb.sty)' 'tex(nicematrix.sty)' 'tex(amsfonts.sty)' 'tex(tcolorbox.sty)' 'tex(xcolor.sty)' 'tex(cancel.sty)' 'tex(graphicx.sty)' 'tex(rotating.sty)' 'tex(color.sty)' 'tex(soul.sty)' 'tex(imakeidx.sty)' 'tex(wrapfig.sty)' 'tex(blindtext.sty)' 'tex(tikz.sty)' 'tex(hyperref.sty)' 'tex(mathrsfs.sty)' 'tex(unicode-math.sty)' 'tex(euscript.sty)'
