@@ -34,7 +34,7 @@ Edit your config file
 Add the following lines
 
       setlocal spell
-      set spelllang=nl,it
+      set spelllang=en,it
       inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
       call plug#begin()
