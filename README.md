@@ -26,3 +26,27 @@ Create the directory to store all the nvim plugins
 Install Vim-plug plugin manager
 
       curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+Edit your config file
+
+      vim ~/.config/nvim/init.vim
+
+Add the following lines
+
+      setlocal spell
+      set spelllang=nl,it
+      inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
+      call plug#begin()
+      Plug 'SirVer/ultisnips'
+      let g:UltiSnipsExpandTrigger = '<tab>'
+      let g:UltiSnipsJumpForwardTrigger = '<tab>'
+      let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+      
+      Plug 'lervag/vimtex'
+      call plug#end()
+      
+      let g:vimtex_view_method='zathura'
+      let g:vimtex_quickfix_mode=0
+
+This will add all the necessary plugin and spelling correction (change "it" with your preferred language)
