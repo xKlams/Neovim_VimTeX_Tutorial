@@ -18,3 +18,11 @@ arch:
 Also install neovim python module
 
     pip3 install --user neovim
+
+Create the directory to store all the nvim plugins
+
+      mkdir ~/.config/nvim
+
+Install Vim-plug plugin manager
+
+      curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
