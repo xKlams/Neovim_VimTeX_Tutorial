@@ -15,23 +15,23 @@ arch:
 
       sudo pacman -Sy install neovim
 
-Also install neovim python module
+Also install neovim python module:
 
     pip3 install --user neovim
 
-Create the directory to store all the nvim plugins
+Create the directory to store all the nvim plugins:
 
       mkdir ~/.config/nvim
 
-Install Vim-plug plugin manager
+Install Vim-plug plugin manager:
 
       curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-Edit your config file
+Edit your config file:
 
       vim ~/.config/nvim/init.vim
 
-Add the following lines
+Add the following lines:
 
       setlocal spell
       set spelllang=en,it
@@ -207,11 +207,16 @@ The content of this file is just a bunch of includes of different packages and m
 
 # Install package (fedora)
 
-To install a package just use
+To install a package just use:
 
 	sudo dnf install 'tex(example.cls)' 
 	sudo dnf install 'tex(example.sty)'
 
-To install all the packages in the setup.tex file you can run
+To install all the packages in the setup.tex file you can run:
 
 	sudo dnf install 'tex(amsmath.sty)' 'tex(amsthm.sty)' 'tex(mdframed.sty)' 'tex(amssymb.sty)' 'tex(nicematrix.sty)' 'tex(amsfonts.sty)' 'tex(tcolorbox.sty)' 'tex(xcolor.sty)' 'tex(cancel.sty)' 'tex(graphicx.sty)' 'tex(rotating.sty)' 'tex(color.sty)' 'tex(soul.sty)' 'tex(imakeidx.sty)' 'tex(wrapfig.sty)' 'tex(blindtext.sty)' 'tex(tikz.sty)' 'tex(hyperref.sty)' 'tex(mathrsfs.sty)' 'tex(unicode-math.sty)' 'tex(euscript.sty)'
+
+ Also install the core LaTeX system:
+ 
+ 	sudo dnf install texlive-scheme-basic
+
