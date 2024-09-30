@@ -220,7 +220,4 @@ To install all the packages in the setup.tex file you can run:
  
  	sudo dnf install texlive-scheme-basic
 
-  # Have fun!
-
-  Consider starring this repository if it has been useful!
-
+# Have fun!
