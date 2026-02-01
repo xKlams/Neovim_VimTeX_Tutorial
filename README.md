@@ -214,7 +214,7 @@ To install a package just use:
 
 To install all the packages in the setup.tex file you can run:
 
-	sudo dnf install 'tex(amsmath.sty)' 'tex(amsthm.sty)' 'tex(mdframed.sty)' 'tex(amssymb.sty)' 'tex(nicematrix.sty)' 'tex(amsfonts.sty)' 'tex(tcolorbox.sty)' 'tex(xcolor.sty)' 'tex(cancel.sty)' 'tex(graphicx.sty)' 'tex(rotating.sty)' 'tex(color.sty)' 'tex(soul.sty)' 'tex(imakeidx.sty)' 'tex(wrapfig.sty)' 'tex(blindtext.sty)' 'tex(tikz.sty)' 'tex(hyperref.sty)' 'tex(mathrsfs.sty)' 'tex(unicode-math.sty)' 'tex(euscript.sty)'
+	sudo dnf install 'tex(amsmath.sty)' 'tex(amsthm.sty)' 'tex(mdframed.sty)' 'tex(amssymb.sty)' 'tex(nicematrix.sty)' 'tex(amsfonts.sty)' 'tex(tcolorbox.sty)' 'tex(xcolor.sty)' 'tex(cancel.sty)' 'tex(graphicx.sty)' 'tex(rotating.sty)' 'tex(color.sty)' 'tex(soul.sty)' 'tex(imakeidx.sty)' 'tex(wrapfig.sty)' 'tex(blindtext.sty)' 'tex(tikz.sty)' 'tex(hyperref.sty)' 'tex(mathrsfs.sty)' 'tex(unicode-math.sty)' 'tex(euscript.sty)' texlive-tikz-cd
 
  Also install the core LaTeX system:
  
