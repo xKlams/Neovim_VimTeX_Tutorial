@@ -88,7 +88,7 @@ snippet newfile "New file"
 
 \title{$1}
 \date{`date +%F`}
-\author{xKlams}
+\author{Federico De Sisti}
 
 \input{./setup.tex}
 
